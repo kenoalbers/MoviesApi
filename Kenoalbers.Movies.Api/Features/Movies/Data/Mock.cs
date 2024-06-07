@@ -2,7 +2,7 @@ namespace Kenoalbers.Movies.Api.Features.Movies.Data;
 
 using Entities;
 
-public class Mock
+public static class Mock
 {
     public static List<Movie> GetMockData() =>
     [
