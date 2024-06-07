@@ -1,6 +1,6 @@
 namespace Kenoalbers.Movies.Api.Generic;
 
-public record Entity
+public abstract class Entity
 {
-    public Guid Id { get; set; }
+    public int Id { get; set; }
 }
