@@ -1,7 +1,6 @@
 namespace Kenoalbers.Movies.Api.Features.Movies.Repository;
 
 using Entities;
-using Data;
 
 public class Repository(List<Movie> movies) : IRepository
 {
