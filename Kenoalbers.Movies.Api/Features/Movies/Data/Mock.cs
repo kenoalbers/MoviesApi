@@ -4,7 +4,7 @@ using Entities;
 
 public class Mock
 {
-    public List<Movie> GetMockData() =>
+    public static List<Movie> GetMockData() =>
     [
         new Movie
         {

@@ -4,7 +4,7 @@ using Entities;
 
 public interface IRepository
 {
-        void Create(Movie movie);
+        Movie Create(Movie movie);
         List<Movie> RetrieveAll();
         List<Movie> RetrieveByName(string name);
         Movie? RetrieveById(int id);

@@ -4,7 +4,7 @@ using Movies = Kenoalbers.Movies.Api.Features.Movies;
 var builder = WebApplication.CreateBuilder(args);
 
 // Mock data
-builder.Services.AddSingleton<Movies.Data.Mock>();
+builder.Services.AddSingleton(Movies.Data.Mock.GetMockData());
 // "Data-query" layer
 builder.Services.AddTransient<Movies.Repository.IRepository, Movies.Repository.Repository>();
 
