@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Kenoalbers.Movies.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ae4d20478e40fd9912f4a806a6d4046f6e303762")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4a44ade899f371ae26ea5c79d62c3b25fed8d778")]
 [assembly: System.Reflection.AssemblyProductAttribute("Kenoalbers.Movies.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Kenoalbers.Movies.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

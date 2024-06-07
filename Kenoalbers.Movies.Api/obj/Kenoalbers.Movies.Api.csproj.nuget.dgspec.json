@@ -37,6 +37,16 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "FastEndpoints": {
+              "target": "Package",
+              "version": "[5.26.0, )"
+            },
+            "FastEndpoints.Swagger": {
+              "target": "Package",
+              "version": "[5.26.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
