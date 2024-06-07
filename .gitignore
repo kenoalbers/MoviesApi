@@ -1,0 +1,10 @@
+# --- Pre-configured ---
+bin/
+obj/
+/packages/
+riderModule.iml
+/_ReSharperl.Caches/
+
+# --- Self-configured ---
+# IDE settings
+.idea/
