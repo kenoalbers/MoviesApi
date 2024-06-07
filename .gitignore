@@ -6,5 +6,4 @@ riderModule.iml
 /_ReSharperl.Caches/
 
 # --- Self-configured ---
-# IDE settings
-.idea/
+.idea/ 
