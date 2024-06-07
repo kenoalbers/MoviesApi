@@ -1,12 +1,15 @@
-using Kenoalbers.Movies.Api.Entities;
-
 namespace Kenoalbers.Movies.Api.Features.Movies.Repository;
 
-public class Repository(List<Movie> movies) : IRepository
+using Entities;
+using Data;
+
+public class Repository(Mock mock) : IRepository
 {
-    public void Create(Movie movie) => movies.Add(movie);
-    public List<Movie> RetrieveAll() => movies;
-    public List<Movie> RetrieveByName(string name) => movies.FindAll(movie => movie.Name == name);
-    public Movie? RetrieveById(int id) => movies.Find(movie => movie.Id == id);
-    public bool DeleteById(int id) => movies.Remove(RetrieveById(id)!);
+    private readonly List<Movie> _movies = mock!.GetMockData();
+
+    public void Create(Movie movie) => _movies.Add(movie);
+    public List<Movie> RetrieveAll() => _movies;
+    public List<Movie> RetrieveByName(string name) => _movies.FindAll(movie => movie.Name == name);
+    public Movie? RetrieveById(int id) => _movies.Find(movie => movie.Id == id);
+    public bool DeleteById(int id) => _movies.Remove(RetrieveById(id)!);
 }

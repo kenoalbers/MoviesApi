@@ -1,7 +1,4 @@
-using FastEndpoints;
-using FastEndpoints.Swagger;
-
-// Internal entity namespace
+// Include movie namespace with the Movies prefix
 using Movies = Kenoalbers.Movies.Api.Features.Movies;
 
 var builder = WebApplication.CreateBuilder(args);

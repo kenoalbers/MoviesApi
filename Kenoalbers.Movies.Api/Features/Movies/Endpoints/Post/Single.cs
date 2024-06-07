@@ -4,3 +4,8 @@ public class Single
 {
     
 }
+
+public class Mapper
+{
+    
+}

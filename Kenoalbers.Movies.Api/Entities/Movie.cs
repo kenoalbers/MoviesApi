@@ -1,6 +1,6 @@
-using Kenoalbers.Movies.Api.Generic;
-
 namespace Kenoalbers.Movies.Api.Entities;
+
+using Generic;
 
 public class Movie : Entity
 { 
