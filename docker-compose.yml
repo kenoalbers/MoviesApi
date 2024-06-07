@@ -1,0 +1,8 @@
+﻿services:
+  kenoalbers.movies.api:
+    container_name: "movies-api"
+    ports:
+      - "8080:8080"
+    build:
+      context: .
+      dockerfile: Kenoalbers.Movies.Api/Dockerfile
