@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../build/Kenoalbers.Movies.Api.props" />
+</Project>

@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Kenoalbers.Movies.Api/1.0.0": {
+        "runtime": {
+          "Kenoalbers.Movies.Api.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Kenoalbers.Movies.Api/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
