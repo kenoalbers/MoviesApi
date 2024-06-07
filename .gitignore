@@ -7,3 +7,5 @@ riderModule.iml
 
 # --- Self-configured ---
 .idea/ 
+Kenoalbers.Movies.Api/obj
+Kenoalbers.Movies.Api/bin
