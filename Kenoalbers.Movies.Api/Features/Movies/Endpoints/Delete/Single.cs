@@ -7,6 +7,12 @@ public class Single(IRepository repository) : Endpoint<Shared.IdRequest>
     public override void Configure()
     {
         Delete("/movies/id/{id}");
+        Description(builder => builder
+                .Accepts<Shared.IdRequest>()
+                .Produces(204)
+                .Produces(404)
+                .ProducesProblemFE<InternalErrorResponse>(500),
+            clearDefaults: true); 
         AllowAnonymous();
     }
 

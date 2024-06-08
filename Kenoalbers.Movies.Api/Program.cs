@@ -11,7 +11,14 @@ builder.Services.AddTransient<Movies.Repository.IRepository, Movies.Repository.R
 // Api framework
 builder.Services.AddFastEndpoints();
 // OpenApi documentation
-builder.Services.SwaggerDocument();
+builder.Services.SwaggerDocument(options =>
+{
+    options.DocumentSettings = setting =>
+    {
+        setting.Title = "Movies API";
+        setting.Version = "V1";
+    };
+});
 
 var app = builder.Build();
 

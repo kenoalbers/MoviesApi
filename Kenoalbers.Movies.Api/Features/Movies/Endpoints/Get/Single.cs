@@ -8,6 +8,12 @@ public class Single(IRepository repository) : Endpoint<Shared.IdRequest, Shared.
     public override void Configure()
     {
         Get("/movies/id/{id}");
+        Description(builder => builder
+                .Accepts<Shared.IdRequest>()
+                .Produces<Shared.Response>(200, "application/json")
+                .Produces(404)
+                .ProducesProblemFE<InternalErrorResponse>(500),
+            clearDefaults: true);
         AllowAnonymous();
     }
 

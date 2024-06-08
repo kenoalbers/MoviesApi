@@ -8,13 +8,19 @@ public class Single(IRepository repository) : Endpoint<Shared.NameRequest, Share
     public override void Configure()
     {
         Post("/movies");
+        Description(builder => builder
+                .Accepts<Shared.NameRequest>("application/json")
+                .Produces<Shared.Response>(201)
+                .ProducesProblemFE(400)
+                .ProducesProblemFE<InternalErrorResponse>(500),
+            clearDefaults: true);
         AllowAnonymous();
     }
 
     public override async Task HandleAsync(Shared.NameRequest request, CancellationToken cancellationToken)
     {
         var createMovie = repository.Create(Map.ToEntity(request));
-        
+
         await SendAsync(Map.FromEntity(createMovie), (int)HttpStatusCode.Created, cancellationToken);
     }
 }

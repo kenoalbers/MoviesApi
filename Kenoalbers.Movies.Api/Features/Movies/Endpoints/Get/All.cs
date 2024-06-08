@@ -7,6 +7,10 @@ public class All(IRepository repository) : EndpointWithoutRequest<List<Shared.Re
     public override void Configure()
     {
         Get("/movies");
+        Description(builder => builder
+                .Produces(200)
+                .ProducesProblemFE<InternalErrorResponse>(500),
+            clearDefaults: true); 
         AllowAnonymous();
     }
 
