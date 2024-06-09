@@ -14,6 +14,7 @@ public class Single(IRepository repository) : Endpoint<Shared.NameRequest, Share
                 .ProducesProblemFE(400)
                 .ProducesProblemFE<InternalErrorResponse>(500),
             clearDefaults: true);
+        Summary(summary => { summary.ExampleRequest = new Shared.NameRequest { Name = "Jurassic Park" }; });
         AllowAnonymous();
     }
 

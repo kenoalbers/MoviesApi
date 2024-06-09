@@ -16,7 +16,7 @@ builder.Services.SwaggerDocument(options =>
     options.DocumentSettings = setting =>
     {
         setting.Title = "Movies API";
-        setting.Version = "V1";
+        setting.Version = "v1";
     };
 });
 
