@@ -13,7 +13,7 @@ public class Repository(List<Movie> movies) : IRepository
         return movieToAdd;
     }
     public List<Movie> RetrieveAll() => movies;
-    public List<Movie> RetrieveByName(string name) => movies.FindAll(movie => movie.Name == name);
+    public List<Movie> RetrieveByName(string name) => movies.FindAll(movie => string.Equals(movie.Name, name, StringComparison.CurrentCultureIgnoreCase));
     public Movie? RetrieveById(int id) => movies.Find(movie => movie.Id == id);
     public bool DeleteById(int id) => movies.Remove(RetrieveById(id)!);
 }
