@@ -7,6 +7,7 @@
       context: .
       dockerfile: Kenoalbers.Movies.Api/Dockerfile
   test:
+    container_name: "server-test"
     image: swsyspro-mue-automated-tests-2024
     ports:
       - "8081:8081"
