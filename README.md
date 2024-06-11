@@ -9,6 +9,10 @@
    
 `dotnet run --project Kenoalbers.Movies.Api/ --launch-profile http`
 
+or
+
+`docker compose up`
+
 3. **OpenApi documentation**
    
-Open `http://http://localhost:5555/swagger` in a webbrowser.
+Open `http://localhost:8080/swagger` in a webbrowser.
