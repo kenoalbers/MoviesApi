@@ -1,8 +1,12 @@
 ﻿services:
   kenoalbers.movies.api:
-    container_name: "movies-api"
+    container_name: "server"
     ports:
       - "8080:8080"
     build:
       context: .
       dockerfile: Kenoalbers.Movies.Api/Dockerfile
+  test:
+    image: swsyspro-mue-automated-tests-2024
+    ports:
+      - "8081:8081"

@@ -6,7 +6,7 @@ public static class Mock
 {
     public static List<Movie> GetMockData() =>
     [
-        new Movie
+        /*new Movie
         {
             Id = 1,
             Name = "Jaws"
@@ -20,6 +20,6 @@ public static class Mock
         {
             Id = 3,
             Name = "E.T. the Extra-Terrestrial"
-        }
+        }*/
     ];
 }
