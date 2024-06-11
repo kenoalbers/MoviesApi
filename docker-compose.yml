@@ -11,3 +11,5 @@
     image: swsyspro-mue-automated-tests-2024
     ports:
       - "8081:8081"
+    depends_on:
+      - kenoalbers.movies.api
