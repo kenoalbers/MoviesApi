@@ -1,9 +1,9 @@
 # Getting started!
 1. **Clone**
     
-`git clone https://github.com/Kenoalpe/movies-api.git`
+`git clone https://github.com/Kenoalpe/MoviesApi.git`
 
-`cd movie-api`
+`cd MoviesApi`
 
 2. **Run**
    
